@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Header } from "./sections/Header";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="bg-background text-primary min-h-screen">
+      <Header />
+
+      {/* Other sections will go here */}
+      <main className="pt-16">
+        {/* Example placeholder */}
+        <section id="home" className="h-screen flex items-center justify-center">
+          <h1 className="text-4xl">Home Section</h1>
+        </section>
+        <section id="about" className="h-screen flex items-center justify-center">
+          <h1 className="text-4xl">About Section</h1>
+        </section>
+
+        <section id="experience" className="h-screen flex items-center justify-center">
+          <h1 className="text-4xl">Experience Section</h1>
+        </section>
+
+        <section id="projects" className="h-screen flex items-center justify-center">
+          <h1 className="text-4xl">Projects Section</h1>
+        </section>
+
+        <section id="contact" className="h-screen flex items-center justify-center">
+          <h1 className="text-4xl">Contact Section</h1>
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
