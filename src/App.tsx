@@ -4,6 +4,7 @@ import { Header } from "./sections/Header";
 import { Sidebar } from "./sections/Sidebar";
 
 import { navLinks } from "./data/navLinks";
+import { Hero } from "./sections/Hero";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
@@ -51,7 +52,7 @@ function App() {
           id="home"
           className="h-screen flex items-center justify-center"
         >
-          <h1 className="text-4xl">Homepage (Hero Section)</h1>
+          <Hero />
         </section>
         <section
           id="about"

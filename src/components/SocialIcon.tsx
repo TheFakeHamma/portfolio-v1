@@ -24,7 +24,7 @@ export const SocialIcon = ({ type, url }: SocialIconProps) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-primary hover:text-accent transition-colors duration-300"
+      className="text-primary hover:text-accent transition-transform transform hover:scale-110 duration-300"
     >
       {renderIcon()}
     </a>
