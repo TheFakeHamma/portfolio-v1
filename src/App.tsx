@@ -9,6 +9,7 @@ import { About } from "./sections/About";
 import { Projects } from "./sections/Projects";
 import { ProjectDetails } from "./sections/ProjectDetails";
 import { Experience } from "./sections/Experience";
+import { Contact } from "./sections/Contact";
 
 function App() {
   const location = useLocation();
@@ -98,7 +99,7 @@ function App() {
                 id="contact"
                 className="h-screen flex items-center justify-center"
               >
-                <h1 className="text-4xl">Contact Section</h1>
+                <Contact />
               </section>
             </main>
           }
