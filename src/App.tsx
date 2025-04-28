@@ -5,6 +5,7 @@ import { Sidebar } from "./sections/Sidebar";
 
 import { navLinks } from "./data/navLinks";
 import { Hero } from "./sections/Hero";
+import { About } from "./sections/About";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
@@ -58,7 +59,7 @@ function App() {
           id="about"
           className="h-screen flex items-center justify-center"
         >
-          <h1 className="text-4xl">About Section</h1>
+          <About />
         </section>
         <section
           id="experience"
