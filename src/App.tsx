@@ -8,6 +8,7 @@ import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
 import { Projects } from "./sections/Projects";
 import { ProjectDetails } from "./sections/ProjectDetails";
+import { Experience } from "./sections/Experience";
 
 function App() {
   const location = useLocation();
@@ -85,7 +86,7 @@ function App() {
                 id="experience"
                 className="h-screen flex items-center justify-center"
               >
-                <h1 className="text-4xl">Experience Section</h1>
+                <Experience />
               </section>
               <section
                 id="projects"
