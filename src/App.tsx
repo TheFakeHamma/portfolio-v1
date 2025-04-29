@@ -84,16 +84,16 @@ function App() {
                 <About />
               </section>
               <section
-                id="experience"
-                className="h-screen flex items-center justify-center"
-              >
-                <Experience />
-              </section>
-              <section
                 id="projects"
                 className="h-screen flex items-center justify-center"
               >
                 <Projects />
+              </section>
+              <section
+                id="experience"
+                className="h-screen flex items-center justify-center"
+              >
+                <Experience />
               </section>
               <section
                 id="contact"
