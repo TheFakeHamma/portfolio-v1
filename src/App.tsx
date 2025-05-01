@@ -10,6 +10,7 @@ import { Projects } from "./sections/Projects";
 import { ProjectDetails } from "./sections/ProjectDetails";
 import { Experience } from "./sections/Experience";
 import { Contact } from "./sections/Contact";
+import { MobileMenuButton } from "./components/MobileMenuButton";
 
 function App() {
   const location = useLocation();
@@ -106,6 +107,7 @@ function App() {
         />
         <Route path="/projects/:slug" element={<ProjectDetails />} />
       </Routes>
+      {!isProjectPage && <MobileMenuButton />}
     </div>
   );
 }
