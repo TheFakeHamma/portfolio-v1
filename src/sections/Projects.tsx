@@ -5,7 +5,10 @@ import { projects } from "../data/projects";
 export const Projects = () => {
   return (
     <section id="projects" className="container py-24 max-w-6xl mx-auto">
-      <SectionTitle title="Projects" />
+      {/* Section Title */}
+      <h2 className="text-4xl font-bold text-accent mb-16 text-center">
+        Projects
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (

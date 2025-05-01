@@ -14,7 +14,10 @@ export const About = () => {
 
   return (
     <section id="about" className="container py-24 max-w-6xl mx-auto">
-      <SectionTitle title="About Me" />
+      {/* Section Title */}
+      <h2 className="text-4xl font-bold text-accent mb-16 text-center">
+        About Me
+      </h2>
 
       <div className="flex flex-col md:flex-row gap-12 md:gap-20">
         {/* Left Column: About Text */}
