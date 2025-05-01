@@ -13,7 +13,8 @@ export const Sidebar = ({ activeSection }: SidebarProps) => {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -100, opacity: 0 }}
       transition={{ duration: 0.4 }}
-      className="hidden md:fixed md:flex flex-col items-start gap-6 top-1/4 left-8 z-50"
+      className="hidden lg:fixed lg:flex flex-col items-start gap-6 top-1/4 left-6 lg:left-10 xl:left-16 z-50"
+
     >
       {navLinks.map((link) => (
         <NavbarLink

@@ -70,7 +70,7 @@ function App() {
         <Route
           path="/"
           element={
-            <main className="pt-16">
+            <main className="pt-16 lg:pl-28 xl:pl-36">
               <section
                 id="home"
                 className="min-h-screen flex items-center justify-center"
