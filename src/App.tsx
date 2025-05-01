@@ -73,31 +73,31 @@ function App() {
             <main className="pt-16">
               <section
                 id="home"
-                className="h-screen flex items-center justify-center"
+                className="min-h-screen flex items-center justify-center"
               >
                 <Hero />
               </section>
               <section
                 id="about"
-                className="h-screen flex items-center justify-center"
+                className="min-h-screen flex items-center justify-center"
               >
                 <About />
               </section>
               <section
                 id="projects"
-                className="h-screen flex items-center justify-center"
+                className="min-h-screen flex items-center justify-center"
               >
                 <Projects />
               </section>
               <section
                 id="experience"
-                className="h-screen flex items-center justify-center"
+                className="min-h-screen flex items-center justify-center"
               >
                 <Experience />
               </section>
               <section
                 id="contact"
-                className="h-screen flex items-center justify-center"
+                className="min-h-screen flex items-center justify-center"
               >
                 <Contact />
               </section>
