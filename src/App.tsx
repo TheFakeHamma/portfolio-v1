@@ -21,8 +21,8 @@ function App() {
       const home = document.getElementById("home");
       if (!home) return;
 
-      const homeHeight = home.offsetHeight;
-      setIsHome(window.scrollY < homeHeight - 50);
+      setIsHome(window.scrollY < 10);
+
 
       let currentSection = "home";
 
