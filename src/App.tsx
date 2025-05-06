@@ -10,6 +10,7 @@ import { Projects } from "./sections/Projects";
 import { ProjectDetails } from "./sections/ProjectDetails";
 import { Experience } from "./sections/Experience";
 import { Contact } from "./sections/Contact";
+import { AnimatedBackground } from "./components/AnimatedBackground";
 
 function App() {
   const location = useLocation();
@@ -22,7 +23,6 @@ function App() {
       if (!home) return;
 
       setIsHome(window.scrollY < 10);
-
 
       let currentSection = "home";
 
@@ -57,7 +57,14 @@ function App() {
   }, [location]);
 
   return (
-    <div className="bg-background text-primary font-sans">
+    <div className="bg-background text-primary font-sans relative">
+      {/* Background matrix effect */}
+      <AnimatedBackground />
+
+      {/* Glass dark layer over animation for contrast */}
+      <div className="fixed inset-0 bg-[#0a192f]/5 z-10 pointer-events-none" />
+
+      {/* Header / Sidebar */}
       <AnimatePresence mode="wait">
         {!isProjectPage && isHome ? (
           <Header key="header" />
@@ -66,11 +73,12 @@ function App() {
         ) : null}
       </AnimatePresence>
 
+      {/* Page content */}
       <Routes>
         <Route
           path="/"
           element={
-            <main className="pt-16 lg:pl-28 xl:pl-36">
+            <main className="pt-16 lg:pl-28 xl:pl-36 relative z-20">
               <section
                 id="home"
                 className="min-h-screen flex items-center justify-center"
