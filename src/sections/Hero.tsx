@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col justify-center items-start gap-8 container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto"
+      className="h-screen flex flex-col justify-center items-center sm:items-start gap-8 container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center sm:text-left"
     >
       <motion.p
         initial={{ opacity: 0, y: 10 }}
@@ -14,14 +14,14 @@ export const Hero = () => {
         transition={{ duration: 0.5 }}
         className="text-accent text-lg sm:text-xl font-mono tracking-wide"
       >
-        // Self-taught developer. Terminal addict. Cyber enthusiast.
+        // Code is my canvas. Terminal is home. Web is my world.
       </motion.p>
 
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-5xl sm:text-6xl font-bold text-primary leading-tight relative"
+        className="text-5xl sm:text-6xl font-bold text-primary leading-tight"
       >
         Muhammad
       </motion.h1>
@@ -48,11 +48,11 @@ export const Hero = () => {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
-        className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-6"
+        transition={{ duration: 0.9, delay: 0.2 }}
+        className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mt-6"
       >
         <Button label="View Projects" href="#projects" variant="primary" />
-        <div className="flex gap-6">
+        <div className="flex gap-4 sm:gap-6">
           <SocialIcon
             type="github"
             url="https://github.com/thefakehamma"
