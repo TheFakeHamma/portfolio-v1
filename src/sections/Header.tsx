@@ -12,7 +12,7 @@ export const Header = () => {
       className="fixed top-0 left-0 w-full z-50 bg-background"
     >
       <nav className="container flex items-center justify-between h-16">
-        <div className="text-2xl font-bold text-accent">Muhammad</div>
+        <div className="text-2xl font-bold text-accent">TheFakeHamma</div>
         <div className="hidden md:flex gap-8">
           {navLinks
             .filter((link) => link.id !== "home")

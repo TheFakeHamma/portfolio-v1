@@ -53,12 +53,12 @@ export const Hero = () => {
       >
         <Button label="View Projects" href="#projects" variant="primary" />
         <div className="flex gap-6">
-          <SocialIcon type="github" url="https://github.com/yourprofile" />
+          <SocialIcon type="github" url="https://github.com/thefakehamma" />
           <SocialIcon
             type="linkedin"
-            url="https://linkedin.com/in/yourprofile"
+            url="https://linkedin.com/in/thefakehamma"
           />
-          <SocialIcon type="email" url="mailto:your@email.com" />
+          <SocialIcon type="email" url="mailto:contact@thefakehamma.com" />
         </div>
       </motion.div>
     </section>
