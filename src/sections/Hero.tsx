@@ -6,7 +6,8 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col justify-center items-center sm:items-start gap-8 container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center sm:text-left"
+      aria-label="Hero section"
+      className="h-screen flex flex-col justify-center items-center sm:items-start gap-8 container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center sm:text-left relative"
     >
       <motion.p
         initial={{ opacity: 0, y: 10 }}
@@ -69,6 +70,16 @@ export const Hero = () => {
             ariaLabel="Send email"
           />
         </div>
+      </motion.div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2, duration: 0.6 }}
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <span className="text-accent text-2xl">⌄</span>
       </motion.div>
     </section>
   );
