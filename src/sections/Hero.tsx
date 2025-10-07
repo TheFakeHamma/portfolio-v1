@@ -6,15 +6,16 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col justify-center items-start gap-8 container px-4 sm:px-6 lg:px-8"
+      aria-label="Hero section"
+      className="h-screen flex flex-col justify-center items-center sm:items-start gap-8 container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center sm:text-left relative"
     >
       <motion.p
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-accent text-lg sm:text-xl"
+        className="text-accent text-lg sm:text-xl font-mono tracking-wide"
       >
-        Hi, my name is
+        // Code is my canvas. Terminal is home. Web is my world.
       </motion.p>
 
       <motion.h1
@@ -30,7 +31,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-3xl sm:text-4xl font-semibold text-secondary leading-tight"
+        className="text-3xl sm:text-4xl font-semibold text-accent leading-tight"
       >
         I build things for the web.
       </motion.h2>
@@ -41,25 +42,44 @@ export const Hero = () => {
         transition={{ duration: 0.8 }}
         className="max-w-2xl text-secondary text-base sm:text-lg"
       >
-        I'm a web developer focused on building (and occasionally designing)
-        exceptional digital experiences.
+        I'm a full-stack developer crafting fast, clean, and powerful websites.
+        Currently building side projects and sharpening my tools.
       </motion.p>
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
-        className="flex items-center gap-8 mt-6"
+        transition={{ duration: 0.9, delay: 0.2 }}
+        className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mt-6"
       >
         <Button label="View Projects" href="#projects" variant="primary" />
-        <div className="flex gap-6">
-          <SocialIcon type="github" url="https://github.com/thefakehamma" />
+        <div className="flex gap-4 sm:gap-6">
+          <SocialIcon
+            type="github"
+            url="https://github.com/thefakehamma"
+            ariaLabel="GitHub profile"
+          />
           <SocialIcon
             type="linkedin"
             url="https://linkedin.com/in/thefakehamma"
+            ariaLabel="LinkedIn profile"
           />
-          <SocialIcon type="email" url="mailto:contact@thefakehamma.com" />
+          <SocialIcon
+            type="email"
+            url="mailto:contact@thefakehamma.com"
+            ariaLabel="Send email"
+          />
         </div>
+      </motion.div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2, duration: 0.6 }}
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <span className="text-accent text-2xl">⌄</span>
       </motion.div>
     </section>
   );
