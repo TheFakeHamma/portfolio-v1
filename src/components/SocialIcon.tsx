@@ -3,20 +3,14 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 interface SocialIconProps {
   type: "github" | "linkedin" | "email";
   url: string;
+  ariaLabel?: string;
 }
 
-export const SocialIcon = ({ type, url }: SocialIconProps) => {
-  const renderIcon = () => {
-    switch (type) {
-      case "github":
-        return <FaGithub size={24} />;
-      case "linkedin":
-        return <FaLinkedin size={24} />;
-      case "email":
-        return <FaEnvelope size={24} />;
-      default:
-        return null;
-    }
+export const SocialIcon = ({ type, url, ariaLabel }: SocialIconProps) => {
+  const icons = {
+    github: <FaGithub size={24} />,
+    linkedin: <FaLinkedin size={24} />,
+    email: <FaEnvelope size={24} />,
   };
 
   return (
@@ -24,9 +18,10 @@ export const SocialIcon = ({ type, url }: SocialIconProps) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-primary hover:text-accent transition-transform transform hover:scale-110 duration-300"
+      className="hover:text-accent transition-transform transform hover:scale-110"
+      aria-label={ariaLabel || type}
     >
-      {renderIcon()}
+      {icons[type]}
     </a>
   );
 };

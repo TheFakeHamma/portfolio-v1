@@ -41,7 +41,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="container py-24 max-w-6xl mx-auto">
+    <section id="contact" className="container py-24 max-w-6xl mx-auto pt-2">
       {/* SEO Meta */}
       <Helmet>
         <title>Contact | Your Name</title>
