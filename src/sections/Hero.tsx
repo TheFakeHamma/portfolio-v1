@@ -66,7 +66,7 @@ export const Hero = () => {
           />
           <SocialIcon
             type="email"
-            url="mailto:contact@thefakehamma.com"
+            url="mailto:hamma.khoshnaw@hotmail.com"
             ariaLabel="Send email"
           />
         </div>

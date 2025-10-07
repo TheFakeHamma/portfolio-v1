@@ -44,7 +44,7 @@ export const Contact = () => {
     <section id="contact" className="container py-24 max-w-6xl mx-auto pt-2">
       {/* SEO Meta */}
       <Helmet>
-        <title>Contact | Your Name</title>
+        <title>Contact | TheFakeHamma</title>
         <meta
           name="description"
           content="Get in touch with me for collaborations, questions, or opportunities."
@@ -83,7 +83,7 @@ export const Contact = () => {
           {/* Social Links */}
           <div className="flex gap-6 text-3xl text-primary">
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/thefakehamma"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-accent transition-transform transform hover:scale-125"
@@ -91,7 +91,7 @@ export const Contact = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://linkedin.com/in/thefakehamma"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-accent transition-transform transform hover:scale-125"
@@ -104,7 +104,7 @@ export const Contact = () => {
           <p className="text-secondary text-sm">
             Or email me directly at{" "}
             <a
-              href="mailto:your@email.com"
+              href="mailto:hamma.khoshnaw@hotmail.com"
               className="text-accent hover:underline hover:text-teal-400 transition-all"
             >
               your@email.com

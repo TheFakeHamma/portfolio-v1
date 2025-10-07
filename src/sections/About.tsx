@@ -66,10 +66,10 @@ export const About = () => {
             <p>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:your@email.com"
+                href="mailto:hamma.khoshnaw@hotmail.com"
                 className="text-primary hover:text-accent transition-colors"
               >
-                your@email.com
+                hamma.khoshnaw@hotmail.com
               </a>
             </p>
           </div>
