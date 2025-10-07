@@ -1,6 +1,6 @@
 // src/sections/About.tsx
 
-import { SectionTitle } from "../components/SectionTitle";
+// import { SectionTitle } from "../components/SectionTitle";
 
 export const About = () => {
   const skills = [
